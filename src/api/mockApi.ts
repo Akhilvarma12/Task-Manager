@@ -7,40 +7,41 @@ const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 const initialTasks: Task[] = [
   {
     id: '1',
-    title: 'Review project requirements',
+    title: 'Buy groceries for the week',
     status: 'completed',
     createdAt: new Date(Date.now() - 86400000 * 3).toISOString(),
     updatedAt: new Date(Date.now() - 86400000 * 2).toISOString(),
   },
   {
     id: '2',
-    title: 'Set up development environment',
+    title: 'Go for evening basketball practice',
     status: 'completed',
     createdAt: new Date(Date.now() - 86400000 * 2).toISOString(),
     updatedAt: new Date(Date.now() - 86400000).toISOString(),
   },
   {
     id: '3',
-    title: 'Implement Redux Toolkit store',
+    title: 'Finish pending office work',
     status: 'pending',
     createdAt: new Date(Date.now() - 86400000).toISOString(),
     updatedAt: new Date(Date.now() - 86400000).toISOString(),
   },
   {
     id: '4',
-    title: 'Create task components',
+    title: 'Clean room and organize desk',
     status: 'pending',
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
   },
   {
     id: '5',
-    title: 'Add filtering and search functionality',
+    title: 'Watch one episode of a favorite series',
     status: 'pending',
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
   },
 ];
+
 
 // In-memory storage
 let tasks: Task[] = [...initialTasks];
